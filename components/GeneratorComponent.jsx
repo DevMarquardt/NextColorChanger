@@ -8,15 +8,15 @@ export default function GeneratorComponent() {
     setCor(corGerada);
   }
 
-  const backgroundImageUrl = "https://i.redd.it/u2klg77z1kr51.jpg";
+  const backgroundImageUrl = "https://o.remove.bg/downloads/3b96b1d4-4718-467c-a5da-f53fec2bceeb/u2klg77z1kr51_1_-removebg-preview.png";
 
   return (
     <>
-      <header style={{ backgroundColor: cor }} className="bg-slate-900 h-20 flex items-center justify-center shadow-xl transition ease-in-out">
+      <header style={{ backgroundColor: cor }} className="bg-slate-900 h-20 flex items-center justify-center shadow-xl transition ease-in-out overflow-y-hidden">
         <p className="flex justify-center text-4xl text-neutral-100">Press any key</p>
       </header>
 
-      <div style={{ backgroundImage: `url(${backgroundImageUrl})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+      <div style={{ backgroundImage: `url(${backgroundImageUrl})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundColor: cor}} className="h-screen overflow-y-hidden transition ease-in-out">
         <div className="flex items-center flex-col p-32">
           <div
             style={{ backgroundColor: cor }}
@@ -29,13 +29,10 @@ export default function GeneratorComponent() {
             </p>
           </div>
           <button type="button" disabled className="flex my-4">
-            <img src="https://cdn.icon-icons.com/icons2/933/PNG/512/round-data-usage-symbol_icon-icons.com_72594.png" className="animate-spin h-10 w-10" alt="" />
+            <img src="https://o.remove.bg/downloads/ffe8b4ee-3702-4dad-99c2-1914209e4f4a/asdasdasd-removebg-preview.png" className="animate-spin h-10 w-10" alt="" />
           </button>
         </div>
       </div>
-      <footer style={{ backgroundColor: cor }} className="bg-slate-900 h-16 flex items-center justify-center shadow-xl transition ease-in-out">
-
-      </footer>
     </>
   );
 }
